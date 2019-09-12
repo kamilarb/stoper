@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Zadanie flexbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <title>Strona testowa JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<style>
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  align-content: center;
+  flex-wrap: wrap;
+  
+}
+.timer {
+  width: 200px;
+  margin-top: 80px;
+  margin-left: 35%;
+}
+.btn {
+  margin:5px;
+}
+.disp {
+  width:200px;
+}
+.clear {
+  display:none;
+}
+</style>    
+    </head>
+    <body>
+      <div class="container">
+        <div class="timer">
+
+<div class="display ">
+  <span class="badge badge-primary"> <p class="disp h1">00:00:000</p></span>
+</div>
+
+ <div class="controls">
+<button class="btn btn-success" data-op="start">START</button>
+<button class="btn btn-success" data-op="stop">STOP</button>
+<button class="btn btn-info" data-op="lap">LAP</button>
+
+<button class="btn btn-warning" data-op="reset">RESET</button>
+<button class="btn btn-secondary" data-op="save">Save your laps</button>
+ </div>
+ <div><hr> </div><h5 class="px-2">LAPS</h5>
+ <div class="laps">
+ 
+   </div>
+   <div class="saved px-2" data-op="save">
+     <button class="clear btn btn-light">clear</button></div>
+  </div></div></div>
+   <script src="src/main.js"></script>
+    </body>
+</html>
